@@ -1,0 +1,5 @@
+Reference, Quantity, Value, Footprint, Manufacturer_Name, Manufacturer_Part_Number
+C1 ,1,100nF,Capacitor_SMD:C_0805_2012Metric,,
+IC1 ,1,SLS32AIA010MSUSON10XTMA2,SamacSys_Parts:SON50P300X300X60-11N-D,Infineon,SLS32AIA010MSUSON10XTMA2
+J1 ,1,Conn_01x06,Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Horizontal,Wurth Elektronik,613006143121  
+R1 R2 ,2,4.7k,Resistor_SMD:R_0805_2012Metric,,

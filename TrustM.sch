@@ -1,0 +1,208 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "TrustM breakout board for RPi"
+Date "2020-10-17"
+Rev "1.0"
+Comp "OTS Security"
+Comment1 "CC-BY 4.0"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L archive:SamacSys_Parts_SLS32AIA010MSUSON10XTMA2 IC1
+U 1 1 5F6F0C33
+P 3650 3650
+F 0 "IC1" H 4500 3900 50  0000 C CNN
+F 1 "SLS32AIA010MSUSON10XTMA2" H 5000 3800 50  0000 C CNN
+F 2 "SamacSys_Parts:SON50P300X300X60-11N-D" H 4900 3750 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/SLS32AIA010MSUSON10XTMA2.pdf" H 4900 3650 50  0001 L CNN
+F 4 "Security ICs / Authentication ICs" H 4900 3550 50  0001 L CNN "Description"
+F 5 "0.6" H 4900 3450 50  0001 L CNN "Height"
+F 6 "726-SLS32AIA010MSU10" H 4900 3350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/SLS32AIA010MSUSON10XTMA2?qs=wnTfsH77Xs7twhp9u668PQ%3D%3D" H 4900 3250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Infineon" H 4900 3150 50  0001 L CNN "Manufacturer_Name"
+F 9 "SLS32AIA010MSUSON10XTMA2" H 4900 3050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3650 3650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3650 3800
+NoConn ~ 3650 3900
+NoConn ~ 3650 4000
+NoConn ~ 3650 4100
+NoConn ~ 3650 4200
+$Comp
+L archive:power_GND #PWR0101
+U 1 1 5F6F5BBA
+P 4350 4850
+F 0 "#PWR0101" H 4350 4600 50  0001 C CNN
+F 1 "GND" H 4355 4677 50  0000 C CNN
+F 2 "" H 4350 4850 50  0001 C CNN
+F 3 "" H 4350 4850 50  0001 C CNN
+	1    4350 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L archive:Device_R_Small R1
+U 1 1 5F6F7C19
+P 5800 3500
+F 0 "R1" H 5859 3546 50  0000 L CNN
+F 1 "4.7k" H 5859 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5800 3500 50  0001 C CNN
+F 3 "~" H 5800 3500 50  0001 C CNN
+	1    5800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L archive:Device_R_Small R2
+U 1 1 5F6F9937
+P 6100 3500
+F 0 "R2" H 6159 3546 50  0000 L CNN
+F 1 "4.7k" H 6159 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6100 3500 50  0001 C CNN
+F 3 "~" H 6100 3500 50  0001 C CNN
+	1    6100 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3300 4350 3350
+Connection ~ 4350 3300
+Wire Wire Line
+	5050 3900 5800 3900
+Wire Wire Line
+	5050 4000 6100 4000
+Wire Wire Line
+	5800 3600 5800 3900
+Wire Wire Line
+	6100 3600 6100 4000
+Wire Wire Line
+	4350 4750 4250 4750
+Wire Wire Line
+	4350 4750 4450 4750
+Connection ~ 4350 4750
+Wire Wire Line
+	4350 4850 4350 4750
+$Comp
+L archive:Device_C_Small C1
+U 1 1 5F7037F1
+P 4100 3300
+F 0 "C1" H 3900 3350 50  0000 L CNN
+F 1 "100nF" H 3750 3250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4100 3300 50  0001 C CNN
+F 3 "~" H 4100 3300 50  0001 C CNN
+	1    4100 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 3300 4350 3250
+$Comp
+L archive:power_+3V3 #PWR0102
+U 1 1 5F6F68B9
+P 4350 3250
+F 0 "#PWR0102" H 4350 3100 50  0001 C CNN
+F 1 "+3V3" H 4365 3423 50  0000 C CNN
+F 2 "" H 4350 3250 50  0001 C CNN
+F 3 "" H 4350 3250 50  0001 C CNN
+	1    4350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L archive:power_GND #PWR01
+U 1 1 5F7073E2
+P 3850 3300
+F 0 "#PWR01" H 3850 3050 50  0001 C CNN
+F 1 "GND" H 3855 3127 50  0000 C CNN
+F 2 "" H 3850 3300 50  0001 C CNN
+F 3 "" H 3850 3300 50  0001 C CNN
+	1    3850 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3300 4350 3300
+Wire Wire Line
+	4000 3300 3850 3300
+$Comp
+L archive:power_+3V3 #PWR0105
+U 1 1 5F7088CB
+P 5950 3150
+F 0 "#PWR0105" H 5950 3000 50  0001 C CNN
+F 1 "+3V3" H 5965 3323 50  0000 C CNN
+F 2 "" H 5950 3150 50  0001 C CNN
+F 3 "" H 5950 3150 50  0001 C CNN
+	1    5950 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3400 5800 3350
+Wire Wire Line
+	5800 3350 5950 3350
+Wire Wire Line
+	5950 3350 6100 3350
+Wire Wire Line
+	6100 3350 6100 3400
+Connection ~ 5950 3350
+Wire Wire Line
+	5950 3150 5950 3350
+$Comp
+L archive:power_+3V3 #PWR0103
+U 1 1 5F6F7E23
+P 6650 3650
+F 0 "#PWR0103" H 6650 3500 50  0001 C CNN
+F 1 "+3V3" H 6665 3823 50  0000 C CNN
+F 2 "" H 6650 3650 50  0001 C CNN
+F 3 "" H 6650 3650 50  0001 C CNN
+	1    6650 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3900 6700 3900
+Connection ~ 5800 3900
+Wire Wire Line
+	6100 4000 6700 4000
+Connection ~ 6100 4000
+Wire Wire Line
+	6650 3650 6650 3800
+Wire Wire Line
+	6650 3800 6700 3800
+NoConn ~ 6700 4100
+Wire Wire Line
+	6700 4300 5050 4300
+Wire Wire Line
+	5050 4300 5050 4100
+$Comp
+L archive:power_GND #PWR0104
+U 1 1 5F6FB11C
+P 6650 4400
+F 0 "#PWR0104" H 6650 4150 50  0001 C CNN
+F 1 "GND" H 6655 4227 50  0000 C CNN
+F 2 "" H 6650 4400 50  0001 C CNN
+F 3 "" H 6650 4400 50  0001 C CNN
+	1    6650 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4200 6650 4200
+Wire Wire Line
+	6650 4200 6650 4400
+$Comp
+L archive:Connector_Generic_Conn_01x06 J1
+U 1 1 5F6F63C5
+P 6900 4000
+F 0 "J1" H 6980 3992 50  0000 L CNN
+F 1 "Conn_01x06" H 6980 3901 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Horizontal" H 6900 4000 50  0001 C CNN
+F 3 "~" H 6900 4000 50  0001 C CNN
+	1    6900 4000
+	1    0    0    -1  
+$EndComp
+Text Label 6600 3900 2    50   ~ 0
+SDA
+Text Label 6600 4000 2    50   ~ 0
+SCL
+Text Label 6600 4300 2    50   ~ 0
+RST
+$EndSCHEMATC
